@@ -1,0 +1,13 @@
+english
+	bancassurance has never been easier
+	insurance for everyone everywhere
+	Generate isurance policies on the fly
+	Easily interaction between insurance companies, retails and brokers
+	Our Web Services experts will shortly integrate your banking core with our tool
+ 
+español
+	Los Seguros masivos al alcance de tus manos
+	Seguridad y simplicidad en Banca Seguros
+	Genera pólizas, certificados de cobertura y otros en minutos
+	Sencilla interacción entre compañías de seguro, brokers y canales
+	Nuestro expertos en Web Services integrarán su core bancario con nosotros rápidamente
