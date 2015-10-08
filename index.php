@@ -11,6 +11,14 @@ $slider = new Slider($lang);
     <div id="content-main">
     </div>
 </div>
+
+<script type="text/javascript">
+  $(".rslides").responsiveSlides({
+    speed: 1000,
+    timeout: 4000,
+    maxwidth: ""
+  });
+</script>
 <?php
 
 include_once 'footer.php';

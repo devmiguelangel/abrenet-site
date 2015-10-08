@@ -1,6 +1,6 @@
 <?php
 
-// require 'classes/Carrousel.class.php';
+ require 'classes/Carrousel.php';
 
 ?>
 <section id="banner">
@@ -27,7 +27,7 @@
     <footer>
         <div id="footer-content">
 <?php
-$menu->getMenuFooter($lang);
+// $menu->getMenuFooter($lang);
 ?>
         </div>
         <div class="about">

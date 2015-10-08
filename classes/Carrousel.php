@@ -1,18 +1,25 @@
 <?php
-require_once('Abrenet.php');
 
-class Carrousel{
-	var $query;
-	var $rs;
-	var $rows;
-	var $cx;
+require 'Abrenet.php';
+
+class Carrousel
+{
+	private $cx;
 	
-	function Carrousel(){
+	public function Carrousel()
+	{
 		$this->cx = new Abrenet();
 	}
 	
-	function getCarrousel(){
-		$this->query = 'SELECT * FROM cp_carrousel ORDER BY cr_id ASC ;';
+	public function getCarrousel(){
+		$sql = "SELECT *
+		FROM
+			cp_carrousel
+		ORDER BY cr_id ASC
+		;";
+		
+
+		$this->query = '';
 		$this->rs = mysql_query($this->query,$this->cx->connectDB());
 		
 		if(mysql_num_rows($this->rs) > 0){

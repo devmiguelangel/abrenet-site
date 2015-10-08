@@ -56,8 +56,8 @@ $("#es-link").click(function(e){ e.preventDefault(); });
 <meta name="author" content="Coboser" />
 <meta name="keywords" content="Abrenet, abrenet, insurance, insurance for all, Coboser, coboser, la paz, bolivia, la paz bolivia, bancassurance, bancassurance solution, bancassurance software, bancassurance software solution, bancassurance automation, automated bancassurance, insurance software, insurance solution, broker insurance software, broker insurance solution, insurance automation, broker system solution, broker software solution, sistema para seguros masivos, software para seguros masivos, software para banca seguros, sistema para banca seguros, automatización de seguros, software banca seguros " />
 
-<link type="text/css" href="css/style-an.css" rel="stylesheet" />
-<link rel="stylesheet" href="estroSlider/js/pe.kenburns/themes/neutral_light/skin.min.css" />
+    <link rel="stylesheet" href="responsiveSlides/responsiveslides.css" type="text/css">
+    <link type="text/css" href="css/style-an.css" rel="stylesheet" />
 
 <!--[if gte IE 9]>
   <style type="text/css">
@@ -79,12 +79,12 @@ $("#es-link").click(function(e){ e.preventDefault(); });
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.40244.js"></script>
 <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-<script type="text/javascript" src="estroSlider/js/pe.kenburns/jquery.pixelentity.kenburnsSlider.min.js"></script>
 <script type="text/javascript" src="carouFredSel/jquery.carouFredSel-6.2.0.js"></script>
 <script type="text/javascript" language="javascript" src="carouFredSel/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
 
-<script type="text/javascript" src="js/script-an.js"></script>
+<script src="responsiveSlides/responsiveslides.min.js"></script>
 
+<script type="text/javascript" src="js/script-an.js"></script>
 </head>
 <?php
 if($page != 1){
@@ -92,6 +92,9 @@ if($page != 1){
 <script type="text/javascript">
 $(document).ready(function(){
     $.scrollTo('#content-main',1000);
+
+    
+    // setCarouFredSel();
 })
 </script>
 <?php

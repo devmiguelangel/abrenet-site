@@ -41,13 +41,15 @@ class Slider
                     if ($rs->num_rows > 0) {
                         $texts = $rs->fetch_all(MYSQLI_ASSOC);
 
+                        ob_start();
                         require __DIR__ . '/../views/sliders.php';
+                        $content = ob_get_clean();
                     }
                 }
             }
         }
 
-//        return $content;
+        return $content;
 	}
 }
 
