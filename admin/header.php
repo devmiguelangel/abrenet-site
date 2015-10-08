@@ -67,7 +67,7 @@ $(document).ready(function(){
 	<img src="../img/abrenet-logo2.png" width="350px" height="91px" />
 <?php
 if($index == 2){
-	echo '<div id="welcome-user">Bienvenido: <span class="name-user" >'.$user.' </span></br>
+	echo '<div id="welcome-user">Bienvenido: <span classes="name-user" >'.$user.' </span></br>
 			<a href="includes/logoff.php" id="logoff" >Cerrar Sesión</a>
 		</div>';
 }

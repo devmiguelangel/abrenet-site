@@ -1,5 +1,5 @@
 <?php
-require_once('db_abrenet.class.php');
+require_once('Abrenet.php');
 
 class Carrousel{
 	var $query;

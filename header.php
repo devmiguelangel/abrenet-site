@@ -1,6 +1,6 @@
 <?php
-require_once('class/Menu.class.php');
-require_once('class/Slider.class.php');
+
+require 'classes/Menu.class.php';
 
 $lang = 'en';
 if(isset($_GET['lang'])){
@@ -84,11 +84,6 @@ $("#es-link").click(function(e){ e.preventDefault(); });
 <script type="text/javascript" language="javascript" src="carouFredSel/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
 
 <script type="text/javascript" src="js/script-an.js"></script>
-<script type="text/javascript">
-setEstroSlider();
-setCarouFredSel();
-
-</script>
 
 </head>
 <?php
@@ -130,19 +125,3 @@ $menu->menuMainMenu($lang,$page);
 
 ?>      
     </nav>
-    
-    <div id="main">
-        <section id="slider">
-            <div id="wrapper" class="container_16">
-                <!--start peKenBurns slider-->
-                <div class="peKenBurns peNoJs" data-autopause="image" data-thumb="disabled" data-mode="kb" data-controls="always" data-shadow="enabled" data-logo="enabled" >
-<?php
-$slide = new Slider();
-$slide->getSlider($lang);
-
-?>
-                    
-                </div>
-            <!--end peKenBurns slider -->            
-            </div>
-        </section>

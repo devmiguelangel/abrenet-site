@@ -21,13 +21,13 @@ class Menu{
 			while($i <= $numItems){
 				if($page == $i){
 					if($i != 1){
-						echo '<li><a class="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
+						echo '<li><a classes="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
 					}else{
-						echo '<li><a class="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
+						echo '<li><a classes="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
 					}
 				}else{
 					if($i == $numItems){
-						echo '<li><a class="last-item" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
+						echo '<li><a classes="last-item" id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
 					}else{
 						echo '<li><a id="item-'.$i.'" href="'.$this->url[$i].'?lang=en&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEn[$i].'</a></li>';
 					}
@@ -45,10 +45,10 @@ class Menu{
 			$numItems = 4;
 			while($i <= $numItems){
 				if($page == $i){
-					echo '<li><a class="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=es&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEs[$i].'</a></li>';
+					echo '<li><a classes="active" id="item-'.$i.'" href="'.$this->url[$i].'?lang=es&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEs[$i].'</a></li>';
 				}else{
 					if($i == $numItems){
-						echo '<li><a class="last-item" id="item-'.$i.'" href="'.$this->url[$i].'?lang=es&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEs[$i].'</a></li>';
+						echo '<li><a classes="last-item" id="item-'.$i.'" href="'.$this->url[$i].'?lang=es&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEs[$i].'</a></li>';
 					}else{
 						echo '<li><a id="item-'.$i.'" href="'.$this->url[$i].'?lang=es&71860c77c6745379b0d44304d66b6a13='.$i.'">'.$this->menuEs[$i].'</a></li>';
 					}

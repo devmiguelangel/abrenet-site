@@ -23,7 +23,7 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST")
 				{
 				$command=mysql_query("UPDATE users SET image='$actual_image_name' WHERE uid='$session_id'");
 									
-				echo "<img src='upload/".$actual_image_name."'  class='preview'>";
+				echo "<img src='upload/".$actual_image_name."'  classes='preview'>";
 							
 				$_SESSION["image"]=$actual_image_name;						
 					

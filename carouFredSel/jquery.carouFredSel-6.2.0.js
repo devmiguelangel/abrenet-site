@@ -2618,7 +2618,7 @@
 			opts_orig = $.extend(true, {}, options),
 			$wrp = (conf.wrapper == 'parent')
 				? $cfs.parent()
-				: $cfs.wrap('<'+conf.wrapper.element+' class="'+conf.wrapper.classname+'" />').parent();
+				: $cfs.wrap('<'+conf.wrapper.element+' classes="'+conf.wrapper.classname+'" />').parent();
 
 
 		conf.selector		= $cfs.selector;

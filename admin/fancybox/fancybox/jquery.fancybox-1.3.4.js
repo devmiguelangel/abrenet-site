@@ -179,7 +179,7 @@
 						return;
 					}
 
-					$('<div class="fancybox-inline-tmp" />')
+					$('<div classes="fancybox-inline-tmp" />')
 						.hide()
 						.insertBefore( $(obj) )
 						.bind('fancybox-cleanup', function() {
@@ -1045,7 +1045,7 @@
 		);
 
 		outer = $('<div id="fancybox-outer"></div>')
-			.append('<div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div>')
+			.append('<div classes="fancybox-bg" id="fancybox-bg-n"></div><div classes="fancybox-bg" id="fancybox-bg-ne"></div><div classes="fancybox-bg" id="fancybox-bg-e"></div><div classes="fancybox-bg" id="fancybox-bg-se"></div><div classes="fancybox-bg" id="fancybox-bg-s"></div><div classes="fancybox-bg" id="fancybox-bg-sw"></div><div classes="fancybox-bg" id="fancybox-bg-w"></div><div classes="fancybox-bg" id="fancybox-bg-nw"></div>')
 			.appendTo( wrap );
 
 		outer.append(
@@ -1053,8 +1053,8 @@
 			close = $('<a id="fancybox-close"></a>'),
 			title = $('<div id="fancybox-title"></div>'),
 
-			nav_left = $('<a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a>'),
-			nav_right = $('<a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a>')
+			nav_left = $('<a href="javascript:;" id="fancybox-left"><span classes="fancy-ico" id="fancybox-left-ico"></span></a>'),
+			nav_right = $('<a href="javascript:;" id="fancybox-right"><span classes="fancy-ico" id="fancybox-right-ico"></span></a>')
 		);
 
 		close.click($.fancybox.close);

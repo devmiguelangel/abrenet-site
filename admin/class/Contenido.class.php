@@ -46,19 +46,19 @@ $(document).ready(function() {
 				$this->getFancybox();
 				
 				$imprime = '<section id="list-category">
-				<p class="link-new-order" align="center">
-					<a href="slider.php?cg=1&action=1" class="link-new-slider">Nuevo Banner</a>
-					<a href="#" class="link-order-slider" rel="">Modificar Orden</a>
+				<p classes="link-new-order" align="center">
+					<a href="slider.php?cg=1&action=1" classes="link-new-slider">Nuevo Banner</a>
+					<a href="#" classes="link-order-slider" rel="">Modificar Orden</a>
 				</p>';
 				
 				while($this->dt = mysql_fetch_array($this->rs)){
-					$imprime .= '<div class="list-slider-content">
-						<span class="orden-slider">'.$this->dt['sl_orden'].'</span>
-						<img src="../'.$this->dt['sl_img'].'" class="img-slider" />
-						<div class="desc-slider">
+					$imprime .= '<div classes="list-slider-content">
+						<span classes="orden-slider">'.$this->dt['sl_orden'].'</span>
+						<img src="../'.$this->dt['sl_img'].'" classes="img-slider" />
+						<div classes="desc-slider">
 							<p align="center">'.$this->dt['sl_descripcion'].'</p>
-							<p class="link-update" align="center">
-								<a class="update-slider" href="slider.php?cg=1&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['sl_id'].'" >Modificar</a>
+							<p classes="link-update" align="center">
+								<a classes="update-slider" href="slider.php?cg=1&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['sl_id'].'" >Modificar</a>
 							</p>
 						</div>
 					</div>';
@@ -78,19 +78,19 @@ $(document).ready(function() {
 				$this->getFancybox();
 				
 				$imprime = '<section id="list-category">
-				<p class="link-new-order" align="center">
-					<a href="slider.php?cg=2&action=1" class="link-new-slider">Nuevo Carrousel</a>
-					<a href="#" class="link-order-slider" rel="">Modificar Orden</a>
+				<p classes="link-new-order" align="center">
+					<a href="slider.php?cg=2&action=1" classes="link-new-slider">Nuevo Carrousel</a>
+					<a href="#" classes="link-order-slider" rel="">Modificar Orden</a>
 				</p>';
 				
 				while($this->dt = mysql_fetch_array($this->rs)){
-					$imprime .= '<div class="list-slider-content">
-						<span class="orden-slider">'.$this->dt['cr_id'].'</span>
-						<img src="../'.$this->dt['cr_img'].'" class="img-carr" />
-						<div class="desc-slider">
+					$imprime .= '<div classes="list-slider-content">
+						<span classes="orden-slider">'.$this->dt['cr_id'].'</span>
+						<img src="../'.$this->dt['cr_img'].'" classes="img-carr" />
+						<div classes="desc-slider">
 							<p align="center">'.$this->dt['cr_url'].'</p>
-							<p class="link-update" align="center">
-								<a class="update-slider" href="slider.php?cg=2&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['cr_id'].'" >Modificar</a>
+							<p classes="link-update" align="center">
+								<a classes="update-slider" href="slider.php?cg=2&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['cr_id'].'" >Modificar</a>
 							</p>
 						</div>
 					</div>';
@@ -109,19 +109,19 @@ $(document).ready(function() {
 				$this->getFancybox();
 				
 				$imprime = '<section id="list-category">
-				<p class="link-new-order" align="center">
-					<a href="slider.php?cg=3&action=1" class="link-new-slider">Nuevo Texto</a>
-					<a href="#" class="link-order-slider" rel="">Modificar Orden</a>
+				<p classes="link-new-order" align="center">
+					<a href="slider.php?cg=3&action=1" classes="link-new-slider">Nuevo Texto</a>
+					<a href="#" classes="link-order-slider" rel="">Modificar Orden</a>
 				</p>';
 				
 				while($this->dt = mysql_fetch_array($this->rs)){
-					$imprime .= '<div class="list-slider-content">
-						<span class="orden-slider">'.$this->dt['tx_id'].'</span>
-						<div class="texto-cg">'.$this->dt['tx_texto'].'</div>
-						<div class="desc-slider">
+					$imprime .= '<div classes="list-slider-content">
+						<span classes="orden-slider">'.$this->dt['tx_id'].'</span>
+						<div classes="texto-cg">'.$this->dt['tx_texto'].'</div>
+						<div classes="desc-slider">
 							<p align="center">'.$this->dt['tx_idioma'].'</p>
-							<p class="link-update" align="center">
-								<a class="update-slider" href="slider.php?cg=3&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['tx_id'].'" >Modificar</a>
+							<p classes="link-update" align="center">
+								<a classes="update-slider" href="slider.php?cg=3&action=2&b80bb7740288fda1f201890375a60c8f='.$this->dt['tx_id'].'" >Modificar</a>
 							</p>
 						</div>
 					</div>';

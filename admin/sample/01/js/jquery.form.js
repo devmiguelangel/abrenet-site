@@ -1000,7 +1000,7 @@ $.fn.clearFields = $.fn.clearInputs = function(includeHidden) {
             // includeHidden can be the valud true, or it can be a selector string
             // indicating a special test; for example:
             //  $('#myForm').clearForm('.special:hidden')
-            // the above would clean hidden inputs that have the class of 'special'
+            // the above would clean hidden inputs that have the classes of 'special'
             if ( (includeHidden === true && /hidden/.test(t)) ||
                  (typeof includeHidden == 'string' && $(this).is(includeHidden)) )
                 this.value = '';

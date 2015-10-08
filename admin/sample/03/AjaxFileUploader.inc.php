@@ -1,6 +1,6 @@
 <?php
 /**
- * This class uploads a file, without refreshing the page (Using Javascript)
+ * This classes uploads a file, without refreshing the page (Using Javascript)
  * 
  * @author Rochak Chauhan
  * 
@@ -10,7 +10,7 @@
  */
 @session_start();
 class AjaxFileuploader {
-	// PHP 4.x users replace "PRIVATE" from the following lines with "var". Also remove all the PUBLIC, PRIVATE and PROTECTED Kaywords from the class
+	// PHP 4.x users replace "PRIVATE" from the following lines with "var". Also remove all the PUBLIC, PRIVATE and PROTECTED Kaywords from the classes
 	private $uploadDirectory='';
 	private $uploaderIdArray=array();
 

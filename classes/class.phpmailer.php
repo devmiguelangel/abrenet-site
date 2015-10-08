@@ -1,7 +1,7 @@
 <?php
-/*~ class.phpmailer.php
+/*~ classes.phpmailer.php
 .---------------------------------------------------------------------------.
-|  Software: PHPMailer - PHP email class                                    |
+|  Software: PHPMailer - PHP email classes                                    |
 |   Version: 5.2.4                                                          |
 |      Site: https://github.com/Synchro/PHPMailer/                          |
 | ------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@
 */
 
 /**
- * PHPMailer - PHP email creation and transport class
+ * PHPMailer - PHP email creation and transport classes
  * NOTE: Requires PHP version 5 or later
  * @package PHPMailer
  * @author Andy Prevost
@@ -38,7 +38,7 @@
 if (version_compare(PHP_VERSION, '5.0.0', '<') ) exit("Sorry, this version of PHPMailer will only run on PHP version 5 or greater!\n");
 
 /**
- * PHP email creation and transport class
+ * PHP email creation and transport classes
  * @package PHPMailer
  */
 class PHPMailer {
@@ -174,7 +174,7 @@ class PHPMailer {
   public $UseSendmailOptions	= true;
 
   /**
-   * Path to PHPMailer plugins.  Useful if the SMTP class
+   * Path to PHPMailer plugins.  Useful if the SMTP classes
    * is in a different directory than the PHP include path.
    * @var string
    */
@@ -286,7 +286,7 @@ class PHPMailer {
   public $Timeout       = 10;
 
   /**
-   * Sets SMTP class debugging on or off.
+   * Sets SMTP classes debugging on or off.
    * @var bool
    */
   public $SMTPDebug     = false;
@@ -410,7 +410,7 @@ class PHPMailer {
   /////////////////////////////////////////////////
 
   /**
-   * @var SMTP An instance of the SMTP sender class
+   * @var SMTP An instance of the SMTP sender classes
    * @access protected
    */
   protected   $smtp           = null;
@@ -977,7 +977,7 @@ class PHPMailer {
    * @return bool
    */
   protected function SmtpSend($header, $body) {
-    require_once $this->PluginDir . 'class.smtp.php';
+    require_once $this->PluginDir . 'classes.smtp.php';
     $bad_rcpt = array();
 
     if(!$this->SmtpConnect()) {
@@ -1127,7 +1127,7 @@ class PHPMailer {
   }
 
   /**
-   * Sets the language for all class error messages.
+   * Sets the language for all classes error messages.
    * Returns false if it cannot load the language file.  The default language is English.
    * @param string $langcode ISO 639-1 2-character language code (e.g. Portuguese: "br")
    * @param string $lang_path Path to the language file directory
@@ -2475,7 +2475,7 @@ class PHPMailer {
      */
   public function html2text($html, $advanced = false) {
     if ($advanced) {
-      require_once 'extras/class.html2text.php';
+      require_once 'extras/classes.html2text.php';
       $h = new html2text($html);
       return $h->get_text();
     }
@@ -2497,7 +2497,7 @@ class PHPMailer {
       'bin'   =>  'application/macbinary',
       'doc'   =>  'application/msword',
       'word'  =>  'application/msword',
-      'class' =>  'application/octet-stream',
+      'classes' =>  'application/octet-stream',
       'dll'   =>  'application/octet-stream',
       'dms'   =>  'application/octet-stream',
       'exe'   =>  'application/octet-stream',

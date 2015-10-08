@@ -1,7 +1,7 @@
 <?php
-/*~ class.pop3.php
+/*~ classes.pop3.php
 .---------------------------------------------------------------------------.
-|  Software: PHPMailer - PHP email class                                    |
+|  Software: PHPMailer - PHP email classes                                    |
 |   Version: 5.2.4                                                          |
 |      Site: https://github.com/Synchro/PHPMailer/                          |
 | ------------------------------------------------------------------------- |
@@ -46,9 +46,9 @@
  * Does not yet work with APOP - if you have an APOP account, contact Jim Jagielski
  * and we can test changes to this script.
  *
- * This class is based on the structure of the SMTP class originally authored by Chris Ryan
+ * This classes is based on the structure of the SMTP classes originally authored by Chris Ryan
  *
- * This class is rfc 1939 compliant and implements all the commands
+ * This classes is rfc 1939 compliant and implements all the commands
  * required for POP3 connection, authentication and disconnection.
  *
  * @package PHPMailer
@@ -414,5 +414,5 @@ class POP3 {
     );
   }
 
-  //  End of class
+  //  End of classes
 }

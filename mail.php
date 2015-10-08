@@ -1,5 +1,5 @@
 <?php
-require_once('class/class.phpmailer.php');
+require_once('classes/class.phpmailer.php');
 
 if(isset($_POST['send-mail'])){
 	$name = $_POST['name-cf'];

@@ -312,7 +312,7 @@
         this._rerouteClicks();
     };
     
-    // assigning methods to our class
+    // assigning methods to our classes
     AjaxUpload.prototype = {
         setData: function(data){
             this._settings.data = data;

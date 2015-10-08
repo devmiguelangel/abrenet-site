@@ -1,7 +1,7 @@
 <?php
-/*~ class.smtp.php
+/*~ classes.smtp.php
 .---------------------------------------------------------------------------.
-|  Software: PHPMailer - PHP email class                                    |
+|  Software: PHPMailer - PHP email classes                                    |
 |   Version: 5.2.4                                                          |
 |      Site: https://github.com/Synchro/PHPMailer/                          |
 | ------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@
 */
 
 /**
- * PHPMailer - PHP SMTP email transport class
+ * PHPMailer - PHP SMTP email transport classes
  * NOTE: Designed for use with PHP version 5 and up
  * @package PHPMailer
  * @author Andy Prevost
@@ -124,7 +124,7 @@ class SMTP {
   }
 
   /**
-   * Initialize the class so that the data is in a known state.
+   * Initialize the classes so that the data is in a known state.
    * @access public
    * @return SMTP
    */
@@ -513,7 +513,7 @@ class SMTP {
   }
 
   /**
-   * Closes the socket and cleans up the state of the class.
+   * Closes the socket and cleans up the state of the classes.
    * It is not considered good to use this function without
    * first trying to use QUIT.
    * @access public
@@ -985,9 +985,9 @@ class SMTP {
   }
 
   /**
-   * This is an optional command for SMTP that this class does not
+   * This is an optional command for SMTP that this classes does not
    * support. This method is here to make the RFC821 Definition
-   * complete for this class and __may__ be implimented in the future
+   * complete for this classes and __may__ be implimented in the future
    *
    * Implements from rfc 821: TURN <CRLF>
    *
