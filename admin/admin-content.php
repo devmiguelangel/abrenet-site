@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('class/Contenido.class.php');
+require_once('class/Content.php');
 
 if(isset($_SESSION['id-user-cp']) && isset($_SESSION['user-cp'])){
 	if(isset($_POST['acontent'])){

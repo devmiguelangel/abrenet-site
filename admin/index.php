@@ -6,13 +6,13 @@ if(isset($_SESSION['id-user-cp']) && isset($_SESSION['user-cp'])){
 }
 
 $index = 1;
+
 include_once('header.php');
+
 ?>
-
-
 <div id="main-cp">
 	<section id="main-container">
-		<h1>cPanel</h1>
+		<h1>Administrador</h1>
 		<form id="f-signup" method="post" action="">
 			<div id="failure-signup"></div>
 			<label>Nombre de Usuario</label><br />
@@ -27,7 +27,8 @@ include_once('header.php');
 		</form>
 	</section>
 </div>
-
 <?php
+
 include_once('footer.php');
+
 ?>

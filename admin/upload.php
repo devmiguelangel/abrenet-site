@@ -1,6 +1,6 @@
 <?php
 
-require_once('class/Contenido.class.php');
+require_once('class/Content.php');
 $cont = new Contenido_cp();
 
 if(isset($_GET['cg']) && isset($_GET['action'])){

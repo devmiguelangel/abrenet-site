@@ -1,5 +1,5 @@
 <?php
-require_once('class/Contenido.class.php');
+require_once('class/Content.php');
 
 if($_POST){
 	if(isset($_POST['cg']) && isset($_POST['text-content']) && isset($_POST['id'])){

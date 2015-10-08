@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>cPanel Administrator</title>
+<title>Administrator</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -68,7 +68,7 @@ $(document).ready(function(){
 <?php
 if($index == 2){
 	echo '<div id="welcome-user">Bienvenido: <span classes="name-user" >'.$user.' </span></br>
-			<a href="includes/logoff.php" id="logoff" >Cerrar Sesión</a>
+			<a href="includes/logout.php" id="logoff" >Cerrar Sesión</a>
 		</div>';
 }
 ?>
