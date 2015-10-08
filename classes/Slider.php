@@ -1,6 +1,6 @@
 <?php
 
-require 'Abrenet.php';
+require_once 'Abrenet.php';
 
 
 class Slider

@@ -1,29 +1,21 @@
 <?php
 
- require 'classes/Carrousel.php';
+require 'classes/Carousel.php';
+
+$carousel = new Carousel();
 
 ?>
-<section id="banner">
-    <div class="text-en"></div>
-
-    <div class="container-banner">
-        <div class="image_carousel">
-            <div id="foo2">
-<?php
-//$carrousel = new Carrousel();
-//$carrousel->getCarrousel();
-
-?>
-            </div>
-            <div class="clearfix"></div>
-            <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
-            <a class="next" id="foo2_next" href="#"><span>next</span></a>
-            <div class="pagination" id="foo2_pag"></div>
-        </div>
+    <?= $carousel->getCarousel() ;?>
     </div>
+<script type="text/javascript">
+    $(".rslides").responsiveSlides({
+        speed: 1000,
+        timeout: 4000,
+        maxwidth: ""
+    });
 
-</section>
-    
+    setCarouFredSel();
+</script>
     <footer>
         <div id="footer-content">
 <?php
@@ -31,7 +23,7 @@
 ?>
         </div>
         <div class="about">
-            Powered by <a href="http://www.coboser.com/" target="_blank">Coboser 2013</a>
+            Powered by <a href="http://www.coboser.com/" target="_blank">Sibas 2013</a>
         </div>
     </footer>
 </body>

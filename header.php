@@ -1,6 +1,7 @@
 <?php
 
 require 'classes/Menu.class.php';
+require 'classes/Slider.php';
 
 $lang = 'en';
 if(isset($_GET['lang'])){
@@ -8,6 +9,8 @@ if(isset($_GET['lang'])){
 }else{
     $lang = 'en';
 }
+
+$slider = new Slider($lang);
 
 $page = 1;
 if(isset($_GET['71860c77c6745379b0d44304d66b6a13'])){
@@ -92,9 +95,6 @@ if($page != 1){
 <script type="text/javascript">
 $(document).ready(function(){
     $.scrollTo('#content-main',1000);
-
-    
-    // setCarouFredSel();
 })
 </script>
 <?php
@@ -128,3 +128,5 @@ $menu->menuMainMenu($lang,$page);
 
 ?>      
     </nav>
+    <div id="main">
+        <?= $slider->getSlider() ;?>
